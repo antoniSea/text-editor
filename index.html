@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Text editor</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div id="editor" contenteditable="true"></div>
   <div class="buttons-container">
@@ -17,34 +19,34 @@
     <button onclick="saveNote()">Save Note</button>
     <button id="settings-btn">Settings</button>
 
-<div id="settings-modal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Settings</h2>
-    <form>
-      <label for="font-size">Font Size:</label>
-      <select id="font-size">
-        <option value="10">10</option>
-        <option value="12">12</option>
-        <option value="14">14</option>
-        <option value="16">16</option>
-        <option value="18">18</option>
-      </select>
+    <div id="settings-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Settings</h2>
+        <form>
+          <label for="font-size">Font Size:</label>
+          <select id="font-size">
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+          </select>
 
-      <label for="font-family">Font Family:</label>
-      <select id="font-family">
-        <option value="Arial">Arial</option>
-        <option value="Times New Roman">Times New Roman</option>
-        <option value="Verdana">Verdana</option>
-        <option value="Helvetica">Helvetica</option>
-      </select>
-    </form>
-  </div>
-</div>
+          <label for="font-family">Font Family:</label>
+          <select id="font-family">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Helvetica">Helvetica</option>
+          </select>
+        </form>
+      </div>
+    </div>
 
   </div>
   <div id="notesContainer"></div>
-  <script src="/editor.js"></script>
+  <script src="editor.js"></script>
 </body>
 
 </html>
